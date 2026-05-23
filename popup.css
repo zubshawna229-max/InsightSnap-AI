@@ -100,6 +100,34 @@ h1 {
   background: #ffffff;
 }
 
+.page-meta {
+  display: grid;
+  gap: 5px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.page-title,
+.page-url {
+  overflow: hidden;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-title {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.page-url {
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .summary {
   display: grid;
   gap: 12px;
@@ -160,6 +188,12 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .keywords {
   display: flex;
   max-width: 250px;
@@ -176,13 +210,23 @@ h1 {
   background: var(--soft);
 }
 
-.copy-button {
+.copy-button,
+.ghost-button {
   min-width: 74px;
   height: 38px;
   border-radius: 8px;
-  color: #ffffff;
   font-weight: 750;
+}
+
+.copy-button {
+  color: #ffffff;
   background: var(--ink);
+}
+
+.ghost-button {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #ffffff;
 }
 
 .is-loading {
