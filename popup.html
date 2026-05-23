@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InsightSnap AI</title>
+    <link rel="stylesheet" href="./popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <div>
+          <p class="eyebrow">InsightSnap AI</p>
+          <h1>网页总结</h1>
+        </div>
+        <button id="summarizeBtn" class="icon-button" title="生成总结" aria-label="生成总结">
+          <span aria-hidden="true">AI</span>
+        </button>
+      </header>
+
+      <section class="status" id="status">正在读取当前网页...</section>
+
+      <section class="summary" aria-live="polite">
+        <div class="result-block">
+          <p class="label">一句话结论</p>
+          <p id="takeaway" class="takeaway">等待生成总结。</p>
+        </div>
+
+        <div class="result-block">
+          <p class="label">重点摘要</p>
+          <ul id="bullets" class="bullets"></ul>
+        </div>
+
+        <div class="result-block">
+          <p class="label">行动建议</p>
+          <p id="action" class="action">打开一篇文章后点击右上角按钮。</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <p class="label">关键词</p>
+          <div id="keywords" class="keywords"></div>
+        </div>
+        <button id="copyBtn" class="copy-button" type="button">复制</button>
+      </footer>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
