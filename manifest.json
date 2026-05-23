@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "InsightSnap AI",
-  "description": "AI webpage summarizer demo for quick article insights.",
-  "version": "0.1.0",
+  "description": "Summarize the current webpage into key points, actions, and keywords.",
+  "version": "0.2.0",
   "permissions": ["activeTab", "scripting", "clipboardWrite"],
   "action": {
     "default_title": "InsightSnap AI",
