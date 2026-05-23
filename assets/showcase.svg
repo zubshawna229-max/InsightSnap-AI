@@ -1,0 +1,55 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#F4F7FB"/>
+  <rect x="86" y="72" width="1028" height="616" rx="18" fill="#FFFFFF" stroke="#DDE3EA"/>
+  <rect x="86" y="72" width="1028" height="64" rx="18" fill="#18212F"/>
+  <circle cx="126" cy="104" r="8" fill="#EF4444"/>
+  <circle cx="154" cy="104" r="8" fill="#F59E0B"/>
+  <circle cx="182" cy="104" r="8" fill="#10B981"/>
+  <rect x="228" y="91" width="516" height="26" rx="8" fill="#2B3648"/>
+  <text x="252" y="109" fill="#B8C4D5" font-family="Segoe UI, Arial, sans-serif" font-size="14">https://example.com/research/ai-productivity</text>
+  <rect x="132" y="184" width="560" height="38" rx="8" fill="#EAF1FF"/>
+  <text x="154" y="210" fill="#1746B8" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">AI 如何改变网页阅读与知识获取</text>
+  <rect x="132" y="252" width="486" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="288" width="520" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="324" width="430" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="380" width="508" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="416" width="540" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="452" width="462" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="508" width="512" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="132" y="544" width="392" height="16" rx="8" fill="#D9E0EA"/>
+  <rect x="744" y="154" width="310" height="480" rx="18" fill="#FFFFFF" stroke="#C9D3E1" filter="url(#shadow)"/>
+  <text x="770" y="194" fill="#687386" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">INSIGHTSNAP AI</text>
+  <text x="770" y="229" fill="#18212F" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800">网页总结</text>
+  <rect x="986" y="183" width="44" height="44" rx="8" fill="#2563EB"/>
+  <text x="997" y="211" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">AI</text>
+  <rect x="770" y="256" width="260" height="42" rx="8" fill="#F7F9FC" stroke="#DDE3EA"/>
+  <text x="786" y="282" fill="#687386" font-family="Segoe UI, Arial, sans-serif" font-size="13">已分析 1240 个词，预计阅读 4 分钟。</text>
+  <rect x="770" y="318" width="260" height="94" rx="8" fill="#FFFFFF" stroke="#DDE3EA"/>
+  <text x="786" y="344" fill="#687386" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">一句话结论</text>
+  <text x="786" y="374" fill="#18212F" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">AI 正在把长网页变成</text>
+  <text x="786" y="399" fill="#18212F" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">可执行的阅读线索。</text>
+  <rect x="770" y="428" width="260" height="120" rx="8" fill="#FFFFFF" stroke="#DDE3EA"/>
+  <text x="786" y="454" fill="#687386" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">重点摘要</text>
+  <circle cx="792" cy="481" r="4" fill="#0F766E"/>
+  <text x="806" y="486" fill="#263244" font-family="Segoe UI, Arial, sans-serif" font-size="14">自动提取页面主题与核心观点</text>
+  <circle cx="792" cy="512" r="4" fill="#0F766E"/>
+  <text x="806" y="517" fill="#263244" font-family="Segoe UI, Arial, sans-serif" font-size="14">用结构化摘要替代整页扫读</text>
+  <rect x="770" y="566" width="74" height="26" rx="6" fill="#EAF1FF"/>
+  <text x="786" y="584" fill="#1746B8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">AI 阅读</text>
+  <rect x="852" y="566" width="74" height="26" rx="6" fill="#EAF1FF"/>
+  <text x="868" y="584" fill="#1746B8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">网页总结</text>
+  <rect x="938" y="566" width="92" height="38" rx="8" fill="#18212F"/>
+  <text x="970" y="590" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">复制</text>
+  <defs>
+    <filter id="shadow" x="724" y="134" width="350" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.125 0 0 0 0 0.176 0 0 0 0 0.251 0 0 0 0.14 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>
