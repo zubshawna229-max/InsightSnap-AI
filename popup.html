@@ -20,6 +20,11 @@
 
       <section class="status" id="status">正在读取当前网页...</section>
 
+      <section class="page-meta" aria-label="当前页面信息">
+        <p id="pageTitle" class="page-title">当前页面</p>
+        <p id="pageUrl" class="page-url">等待读取网页地址</p>
+      </section>
+
       <section class="summary" aria-live="polite">
         <div class="result-block">
           <p class="label">一句话结论</p>
@@ -42,7 +47,10 @@
           <p class="label">关键词</p>
           <div id="keywords" class="keywords"></div>
         </div>
-        <button id="copyBtn" class="copy-button" type="button">复制</button>
+        <div class="footer-actions">
+          <button id="retryBtn" class="ghost-button" type="button">重试</button>
+          <button id="copyBtn" class="copy-button" type="button">复制</button>
+        </div>
       </footer>
     </main>
 
