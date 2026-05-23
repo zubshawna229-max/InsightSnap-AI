@@ -1,8 +1,7 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message?.type !== "INSIGHTSNAP_READ_PAGE") return false;
 
-  const page = extractPage();
-  sendResponse(page);
+  sendResponse(extractPage());
   return true;
 });
 
@@ -26,12 +25,45 @@ function extractPage() {
 }
 
 function collectReadableText() {
-  const main = document.querySelector("article, main, [role='main']") || document.body;
-  const blocks = [...main.querySelectorAll("h1, h2, h3, p, li, blockquote")]
-    .map((node) => cleanText(node.innerText))
-    .filter((text) => text.length > 24);
+  const root = pickReadableRoot();
+  const clone = root.cloneNode(true);
+  clone.querySelectorAll("script, style, nav, footer, header, aside, form, noscript, svg, canvas, iframe").forEach((node) => {
+    node.remove();
+  });
 
-  return [...new Set(blocks)].join("\n");
+  const blocks = [...clone.querySelectorAll("h1, h2, h3, p, li, blockquote")]
+    .map((node) => cleanText(node.innerText || node.textContent))
+    .filter(isUsefulText);
+
+  const uniqueBlocks = [];
+  const seen = new Set();
+
+  blocks.forEach((text) => {
+    const key = text.slice(0, 120);
+    if (seen.has(key)) return;
+    seen.add(key);
+    uniqueBlocks.push(text);
+  });
+
+  return uniqueBlocks.join("\n");
+}
+
+function pickReadableRoot() {
+  const candidates = [...document.querySelectorAll("article, main, [role='main'], .post, .article, .content")];
+  const best = candidates
+    .map((node) => ({
+      node,
+      score: cleanText(node.innerText || node.textContent).length
+    }))
+    .sort((a, b) => b.score - a.score)[0];
+
+  return best?.score > 200 ? best.node : document.body;
+}
+
+function isUsefulText(text) {
+  if (text.length < 28 || text.length > 900) return false;
+  if (/^(cookie|privacy|subscribe|sign in|log in)$/i.test(text)) return false;
+  return true;
 }
 
 function countWords(text) {
